@@ -4,13 +4,14 @@ function compute()
 
     if(principal == ""){
         alert("Please enter principal.");
-        principal.focus();
+        document.getElementById("principal").focus();
         return false;
     }
 
     if(principal <= 0){
-        alert("Please enter a principal greater than 0.")
-        principal.focus();
+        alert("Please enter a principal greater than 0.");
+        document.getElementById("principal").value = "";
+        document.getElementById("principal").focus();
         return false;
     }
 
